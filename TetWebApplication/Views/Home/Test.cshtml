@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Test";
+}
+
+<h2 id="header">Test</h2>
+
+<a href="www.google.com" class="googleLink">Google Here</a>
+<br/>
+<input type="button" value="Save"  />
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("input").click(function(){
+            $("#header").html("Saved");
+            $(".googleLink").hide("slow");
+            
+        });
+    });
+</script>
