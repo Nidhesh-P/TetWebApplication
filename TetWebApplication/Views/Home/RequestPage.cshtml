@@ -1,0 +1,17 @@
+﻿@model List<TetWebApplication.Models.RequestDto>
+@{
+    ViewBag.Title = "RequestPage";
+}
+
+<h2>RequestPage</h2>
+
+@foreach (var row in Model)
+{
+    <div>@row.RequestId</div>
+    <br />
+    <div>@row.RequestType</div>
+    <br />
+    <div>@row.RequestStatus</div>
+    <br />
+    <div>@row.CreateDate</div>
+}
